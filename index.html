@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet">
+<title>Miffy's birthday lucky draw!</title>
+
+<body style="background-color: white">
+
+  <div id="section-1">
+    <div class="hotdog-div">
+      <img src="src/walking_hotdog.gif" height="100" />
+    </div>
+    <div style="text-align: center;">
+      <h1 class="new-font">Pre-Happy Birthday, Lena! 🎉</h1>
+    </div>
+    <div style="height: 10px"></div>
+    <div style="text-align: center;">
+      <h5 class="new-font">I have prepared some gifts for you!</h5>
+      <h5 class="new-font">It's not gonna be an official celebration yet, </h5>
+      <h5 class="new-font">But just to know what you would like so I can get to prepare on time!</h5>
+      <h5 class="new-font">Let's see what you will get 😌</h5>
+      <h5 class="new-font">Click the button below to start!</h5>
+    </div>
+    <div style="height: 30px"></div>
+    <div style="text-align: center;">
+      <h3 class="new-font">👇👇👇</h3>
+    </div>
+    <div style="text-align: center; margin-bottom: 50px">
+      <a href="#section-2">
+        <button class="btn new-font select-btn" style="margin-right: 0px" onclick="sectionTwo()">
+          Start!
+        </button>
+      </a>
+    </div>
+  </div>
+  <div id="section-2">
+    <div class="hotdog-div" id="waiting_hotdog">
+      <img src="src/waiting_hotdog.gif" height="100" />
+    </div>
+
+    <div class="hotdog-div" id="running_hotdog">
+      <img src="src/running_hotdog.gif" height="100" />
+    </div>
+
+    <div style="text-align: center;">
+      <h3 class="new-font">Please choose each secton 😏</h3>
+    </div>
+    <div style="height: 30px"></div>
+
+    <div class="select-btn-row">
+      <button class="select-btn btn new-font" onclick="travelBlock()" id="travel-btn">
+        Travel
+      </button>
+      <button class="select-btn btn new-font" onclick="eatBlock()" id="eat-btn">
+        Eat
+      </button>
+      <button class="select-btn btn new-font" onclick="wishBlock()" id="wish-btn">
+        Wish
+      </button>
+    </div>
+
+    <!-- <img src="src/flip_it.png" /> -->
+
+    <div id="travel">
+      <h3>國內</h3>
+      <div class="flip-card" onclick="flip_card('t1', 'travel')">
+        <div class="flip-card-inner" id="lucky-inner-t1">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-t1">
+            <img src="src/travel/t1.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('t2', 'travel')">
+        <div class="flip-card-inner" id="lucky-inner-t2">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-t2">
+            <img src="src/travel/t2.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 30px"></div>
+      <h3>國外</h3>
+      <div class="flip-card" onclick="flip_card('a1', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-a1">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-a1">
+            <img src="src/travel/a1.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('a2', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-a2">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back"  id="lucky-back-a2">
+            <img src="src/travel/a2.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 30px"></div>
+      <h3>外島</h3>
+      <div class="flip-card" onclick="flip_card('o1', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-o1">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back"  id="lucky-back-o1">
+            <img src="src/travel/o1.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('o2', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-o2">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back"  id="lucky-back-o2">
+            <img src="src/travel/o2.png" height="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="flip_card('o3', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-o3">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back"  id="lucky-back-o3">
+            <img src="src/travel/o3.png" height="100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" onclick="flip_card('o4', 'travel')">
+        <div class="flip-card-inner"  id="lucky-inner-o4">
+          <div class="flip-card-front">
+            <img src="src/travel/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back"  id="lucky-back-o4">
+            <img src="src/travel/o4.png" height="100" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="eat">
+      <div class="flip-card" onclick="flip_card('r1', 'eat')">
+        <div class="flip-card-inner" id="lucky-inner-r1">
+          <div class="flip-card-front">
+            <img src="src/eat/t1_flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-r1">
+            <img src="src/eat/r1.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('r2', 'eat')">
+        <div class="flip-card-inner" id="lucky-inner-r2">
+          <div class="flip-card-front">
+            <img src="src/eat/t2_flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-r2">
+            <img src="src/eat/r2.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('r3', 'eat')">
+        <div class="flip-card-inner" id="lucky-inner-r3">
+          <div class="flip-card-front">
+            <img src="src/eat/t3_flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-r3">
+            <img src="src/eat/r3.png" height="100" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="wish">
+      <div class="flip-card" onclick="flip_card('w1', 'wish')">
+        <div class="flip-card-inner" id="lucky-inner-w1">
+          <div class="flip-card-front">
+            <img src="src/wish/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-w1">
+            <img src="src/wish/w1.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('w2', 'wish')">
+        <div class="flip-card-inner" id="lucky-inner-w2">
+          <div class="flip-card-front">
+            <img src="src/wish/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-w2">
+            <img src="src/wish/w2.png" height="100" />
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" onclick="flip_card('w3', 'wish')">
+        <div class="flip-card-inner" id="lucky-inner-w3">
+          <div class="flip-card-front">
+            <img src="src/wish/flip.png" alt="Avatar" height="100">
+          </div>
+          <div class="flip-card-back" id="lucky-back-w3">
+            <img src="src/wish/w3.png" height="100" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section-3">
+    <div style="text-align:center">
+      <h3>Are you sure?</h3>
+      <h3>Final Selection</h3>
+      <div id="final-selection"></div>
+      <div style="height: 30px"></div>
+      <button class="btn new-font select-btn" onclick="showSection4()">
+        Yes!
+
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<style>
+  #section-2, #section-3, #section-4 {
+    display: none;
+  }
+
+  #travel,
+  #eat,
+  #wish{
+    margin-top: 30px;
+    display: none;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .btn.select-btn,
+  .btn.select-btn:focus {
+    min-width: 150px;
+    position: relative;
+    z-index: 0;
+    border: 2px solid currentColor;
+    border-radius: 48px;
+    color: #000080;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  #travel-btn,
+  #eat-btn,
+  #wish-btn {
+    display: inline-block;
+  }
+
+  .btn.select-btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #000080;
+    border-radius: 3rem;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+  }
+
+  .selected {
+    background-color: #000080;
+    color: white !important;
+    border: 1px solid #000080;
+  }
+
+  .btn.select-btn:hover:after {
+    transform: translate(0, 0);
+  }
+
+  .btn.select-btn:hover {
+    border: 2px solid transparent;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+  .select-btn-row {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 100px;
+    border: none;
+    perspective: 1000px;
+    display: inline-block;
+    margin-bottom: 20px;
+    /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(30deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .new-font {
+    font-family: "AR One Sans", sans-serif;
+  }
+
+  .hotdog-div {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #disclaimer {
+    display: none;
+  }
+
+  #running_hotdog {
+    display: none;
+  }
+
+  #back-btn {
+    display: none;
+    ;
+  }
+</style>
+
+<script>
+  var unclickable_travel = false;
+  var unclickable_eat = false;
+  var unclickable_wish = false;
+
+  var travel_selection = ""
+  var eat_selection = ""
+  var wish_selection = ""
+
+  function travelBlock() {
+    document.getElementById("travel").style.display = "block";
+    document.getElementById("eat").style.display = "none";
+    document.getElementById("wish").style.display = "none";
+    document.getElementById("travel-btn").classList.add('selected');
+   
+    document.getElementById("running_hotdog").style.display = "block";
+    document.getElementById("waiting_hotdog").style.display = "none";
+
+  }
+
+  function eatBlock() {
+    document.getElementById("eat").style.display = "block";
+    document.getElementById("travel").style.display = "none";
+	  document.getElementById("wish").style.display = "none";
+    document.getElementById("eat-btn").classList.add('selected');
+
+
+    document.getElementById("running_hotdog").style.display = "block";
+    document.getElementById("waiting_hotdog").style.display = "none";
+
+  }
+  
+  function wishBlock() {
+    document.getElementById("wish").style.display = "block";
+    document.getElementById("eat").style.display = "none";
+    document.getElementById("travel").style.display = "none";
+    document.getElementById("wish-btn").classList.add('selected');
+
+    document.getElementById("running_hotdog").style.display = "block";
+    document.getElementById("waiting_hotdog").style.display = "none";
+  }
+
+
+  function flip_card(id, type) {
+    if (unclickable_travel && type == 'travel') {
+      return;
+    } else if (unclickable_eat && type == 'eat') {
+      return;
+    } else if (unclickable_wish && type == 'wish') {
+      return;
+    }
+
+    inner_id_block = 'lucky-inner-' + id;
+    back_id_block = 'lucky-back-' + id;
+    document.getElementById(inner_id_block).style.transform = "rotateY(180deg)";
+    document.getElementById(back_id_block).style.transform = "rotateY(180deg)";
+
+    if (type == 'travel') {
+      unclickable_travel = true;
+      travel_selection = id;
+    } else if (type == 'eat') {
+      unclickable_eat = true;
+      eat_selection = id;
+    } else if (type == 'wish') {
+      unclickable_wish = true;
+      wish_selection = id;
+
+      document.getElementById("section-2").style.display = "none";
+      document.getElementById("section-3").style.display = "block";
+      document.getElementById("final-selection").innerHTML = "Travel: " + travel_selection + "<br/>" + "Eat: " + eat_selection + "<br/>" + "Wish: " + wish_selection;
+    }
+    
+  }
+
+  function sectionTwo() {
+    document.getElementById("section-1").style.display = "none";
+    document.getElementById("section-2").style.display = "block";
+  }
+
+  function showSection4() {
+    document.getElementById("section-3").style.display = "none";
+    document.getElementById("section-4").style.display = "block";
+  }
+
+</script>
